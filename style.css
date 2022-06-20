@@ -1,7 +1,18 @@
 #rightSide{
     border: 1px solid black;
-    width: 280px;
+    width: 35%;
+    display: inline-block;
+    
+}
+#left_side{
+    border: 1px solid black;
+    width: 60%;
+    display: inline-block;
 }
 select{
     background-color: rgb(195, 192, 192);
+}
+img{
+    width: 200px;
+    height: auto;
 }
