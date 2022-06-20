@@ -9,6 +9,67 @@
 </head>
 <body>
     <h1>Manipulation du DOM</h1>
+    <div>
+       <h2> Panneau de configuration </h2>
+       <form>
+<label for="fond" > Changer la couleur de fond : </label>
+<br>
+<input type="color" name="fond" id="fond">
+<br>
+<label for="titre" > Changer la couleur du titre : </label>
+<br>
+<input type="color" name="titre" id="titre">
+<br>
+<label for="texte" > Changer la couleur du texte : </label> 
+<br>
+<input type="color" name="texte" id="texte">
+<br>
+<label for="contenu"> Saissir le contenu : </label>
+<br>
+<textarea name="contenu" id="contenu" cols="30" rows="5" placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea>
+<br>
+<label for="taille" > Saissir la taille du titre : </label> 
+<br>
+<input type="number" name="taille" id="taille" min="36" max="72" placeholder="Taille du titre entre 36 et 72px">  
+<br>
+<label for="tailleTexte" > Saissir la taille du titre : </label> 
+<br>
+<input type="number" name="tailleTexte" id="tailleTexte" min="12" max="36" placeholder="Taille du texte entre 12 et 36px">     
+<br>
+<label for="algin_titre"> Alignement du titre :</label>
+<br>
+<select name="algin_titre" id="algin_titre">
+    <option> Choissir l'alignement du titre </option>
+</select>
+<br>
+<label for="algin_texte"> Alignement du texte :</label>
+<br>
+<select name="algin_texte" id="algin_texte">
+    <option> Choissir l'alignement du texte </option>
+</select>
+<br>
+<label for="police_titre"> Police du titre :</label>
+<br>
+<select name="police_titre" id="police_titre">
+    <option> Choissir une font pour le titre </option>
+</select>
+<br>
+<label for="police_texte"> Police du texte :</label>
+<br>
+<select name="police_texte" id="police_texte">
+    <option> Choissir une font du titre </option>
+</select>
+<br>
+<input type="text" placeholder="souce image local ou URL">
+<br>
+<input type="button" value="Changer la photo">
+<br>
+<div>
+Agrandir/rètrécir l'ensemble: 
+ <button> A+ </button> 
+ <button> A- </button> </div>
+</form>
+    </div>
 
     
 </body>
