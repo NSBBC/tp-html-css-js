@@ -16,3 +16,17 @@ img{
     width: 200px;
     height: auto;
 }
+
+
+@media screen and (min-width: 480px) {
+    body{
+        /*background-color: lime;*/
+        text-size-adjust: small;
+    }
+    #rightside{
+        background-color: aquamarine;
+    }
+    #leftside{
+        border: 0px;
+    }
+}
