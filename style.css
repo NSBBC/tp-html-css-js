@@ -18,15 +18,34 @@ img{
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     body{
-        /*background-color: lime;*/
+        background-color: lime;
         text-size-adjust: small;
+        display: flex;
+        flex-flow: column wrap;
     }
-    #rightside{
-        background-color: aquamarine;
-    }
-    #leftside{
+    #left_side{
         border: 0px;
+        width: auto;
+        margin-top: 10px;
     }
+    p{
+        margin: 0;
+        display: block;
+        width: auto;
+    }
+    img{
+        border-radius: 5%;
+        
+    }
+    #rightSide{        
+        border: 0px;
+        width: auto;
+    }
+    #IMGsource{
+        align-self: center;
+        margin-top: 10px;
+    }
+
 }
