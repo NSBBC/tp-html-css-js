@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>TP DOM HTML CSS</title>
 </head>
-
 <body>
+<main>
     <h1>Manipulation du DOM</h1>
 
     <div id="left_side">
@@ -25,82 +24,72 @@
             publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
             'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
             years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        <img src="https://images.unsplash.com/photo-1533892636137-4ea784c23a84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-            alt="image représentant le left side">
+        <img id="image" src="https://images.unsplash.com/photo-1533892636137-4ea784c23a84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="image représentant le left side">
     </div>
-
+    
     <div id="rightSide">
-        <h2> Panneau de configuration </h2>
-        <form>
-            <label for="fond"> Changer la couleur de fond : </label>
-            <br>
-            <input type="color" name="fond" id="fond">
-            <br>
-            <label for="titre"> Changer la couleur du titre : </label>
-            <br>
-            <input type="color" name="titre" id="titre">
-            <br>
-            <label for="texte"> Changer la couleur du texte : </label>
-            <br>
-            <input type="color" name="texte" id="texte">
-            <br>
-            <label for="contenu"> Saissir le contenu : </label>
-            <br>
-            <textarea name="contenu" id="contenu" cols="30" rows="5"
-                placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea>
-            <br>
-            <label for="taille"> Saissir la taille du titre : </label>
-            <br>
-            <input type="number" name="taille" id="taille" min="36" max="72"
-                placeholder="Taille du titre entre 36 et 72px">
-            <br>
-            <label for="tailleTexte"> Saissir la taille du titre : </label>
-            <br>
-            <input type="number" name="tailleTexte" id="tailleTexte" min="12" max="36"
-                placeholder="Taille du texte entre 12 et 36px">
-            <br>
-            <label for="algin_titre"> Alignement du titre :</label>
-            <br>
-            <select name="algin_titre" id="algin_titre">
-                <option> Choissir l'alignement du titre </option>
-            </select>
-            <br>
-            <label for="algin_texte"> Alignement du texte :</label>
-            <br>
-            <select name="algin_texte" id="algin_texte">
-                <option> Choissir l'alignement du texte </option>
-            </select>
-            <br>
-            <label for="police_titre"> Police du titre :</label>
-            <br>
-            <select name="police_titre" id="police_titre">
-                <option> Choissir une font pour le titre </option>
-            </select>
-            <br>
-            <label for="police_texte"> Police du texte :</label>
-            <br>
-            <select name="police_texte" id="police_texte">
-                <option> Choissir une font du titre </option>
-            </select>
-            <br>
-            <input type="text" placeholder="souce image local ou URL">
-            <br>
-            <input type="button" value="Changer la photo">
-            <br>
-            <div>
-                Agrandir/rétrécir l'ensemble:
-                <button> A+ </button>
-                <button> A- </button>
-            </div>
-        </form>
+    <h2> Panneau de configuration </h2>
+    <form>
+<div>
+    <label for="fond" > Changer la couleur de fond : </label>
+    <input type="color" name="fond" id="fond">
+</div>
+<div>
+    <label for="titre" > Changer la couleur du titre : </label>
+    <input type="color" name="titre" id="titre">
+</div>
+<div>
+    <label for="texte" > Changer la couleur du texte : </label> 
+    <input type="color" name="texte" id="texte">
+</div>
+    <label for="contenu"> Saissir le contenu : </label>
+    <textarea name="contenu" id="contenu" cols="30" rows="5" placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea>
+    <div>
+        <label for="taille" > Saissir la taille du titre : </label> 
+        <input type="number" name="taille" id="taille" min="36" max="72" placeholder="Taille du titre entre 36 et 72px">  
     </div>
+    <div>
+        <label for="tailleTexte" > Saissir la taille du titre : </label> 
+        <input type="number" name="tailleTexte" id="tailleTexte" min="12" max="36" placeholder="Taille du texte entre 12 et 36px">     
+    </div>
+    <div>
+        <label for="algin_titre"> Alignement du titre :</label>
+        <select name="algin_titre" id="algin_titre">
+            <option> Choissir l'alignement du titre </option>
+        </select>
+    </div>
+    <div>
+        <label for="algin_texte"> Alignement du texte :</label>
+        <select name="algin_texte" id="algin_texte">
+            <option> Choissir l'alignement du texte </option>
+        </select>
+    </div>
+    <div>
+        <label for="police_titre"> Police du titre :</label>
+        <select name="police_titre" id="police_titre">
+            <option> Choissir une font pour le titre </option>
+        </select>
+    </div>
+    <div>
+        <label for="police_texte"> Police du texte :</label>
+        <select name="police_texte" id="police_texte">
+            <option> Choissir une font du titre </option>
+        </select>
+    </div>
+    <div>
+        <input type="text" placeholder="souce image local ou URL">
+        <input type="button" value="Changer la photo">
+    </div>
+    <div>
+        Agrandir/rètrécir l'ensemble: 
+        <button> A+ </button> 
+        <button> A- </button> 
+    </div>
+</form>
+</div>
 
-    <footer id="IMGsource">
-        Photo by <a href="https://unsplash.com/@markusspiske">Markus Spiske</a> on <a
-                href="https://images.unsplash.com/">Unsplash</a>
-    </footer>
-
+    <p id="IMGsource">Photo by <a href="https://unsplash.com/@markusspiske">Markus Spiske</a> on <a href="https://images.unsplash.com/">Unsplash</a></p>
+</main>
 </body>
-
 
 </html>
