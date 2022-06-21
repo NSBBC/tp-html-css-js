@@ -28,7 +28,7 @@ img{
     #left_side{
         border: 0px;
         width: auto;
-        margin-top: 10px;
+        margin-top: 2%;
     }
     p{
         margin: 0;
@@ -37,7 +37,8 @@ img{
     }
     img{
         border-radius: 5%;
-        
+        width: 100%;
+        margin-top: 2%;
     }
     #rightSide{        
         border: 0px;
@@ -45,7 +46,7 @@ img{
     }
     #IMGsource{
         align-self: center;
-        margin-top: 10px;
+        margin-top: 2%;
     }
 
 }
